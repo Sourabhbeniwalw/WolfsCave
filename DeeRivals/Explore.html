@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Wolf</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Full-screen wolf background */
+    body {
+      background: url('assets/wolf-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    /* Backdrop overlay for readability */
+    .backdrop {
+      background-color: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(6px);
+    }
+
+    .social-card:hover img {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 10px #ffffffaa);
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-6">
+
+  <div class="backdrop p-10 rounded-3xl shadow-2xl w-full max-w-6xl">
+    <h1 class="text-4xl md:text-5xl font-bold mb-10 text-center drop-shadow-lg">Explore Wolf</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+      <!-- YouTube -->
+      <a href="https://youtube.com/@wolf_spd?si=HyYkdVH1DlCvyGxW" target="_blank" class="social-card bg-[#1e1e1e] hover:bg-[#2c2c2c] p-6 rounded-2xl flex flex-col items-center shadow-xl transition-all duration-300">
+        <img src="assets/youtube.jpg" alt="YouTube" class="w-16 h-16 mb-4 transition-transform duration-300">
+        <span class="text-lg font-semibold">YouTube</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/wolfbytes?igsh=MjR1ODdwem9pdTJo" target="_blank" class="social-card bg-[#1e1e1e] hover:bg-[#2c2c2c] p-6 rounded-2xl flex flex-col items-center shadow-xl transition-all duration-300">
+        <img src="assets/instagram.jpg" alt="Instagram" class="w-16 h-16 mb-4 transition-transform duration-300">
+        <span class="text-lg font-semibold">Instagram</span>
+      </a>
+
+      <!-- Twitter -->
+      <a href="" target="_blank" class="social-card bg-[#1e1e1e] hover:bg-[#2c2c2c] p-6 rounded-2xl flex flex-col items-center shadow-xl transition-all duration-300">
+        <img src="assets/X.jpg" alt="X" class="w-16 h-16 mb-4 transition-transform duration-300">
+        <span class="text-lg font-semibold">X</span>
+      </a>
+
+      <!-- Reddit -->
+      <a href="https://www.reddit.com/r/WolfHQ/s/VgTKW5S7v2" target="_blank" class="social-card bg-[#1e1e1e] hover:bg-[#2c2c2c] p-6 rounded-2xl flex flex-col items-center shadow-xl transition-all duration-300">
+        <img src="assets/reddit.jpg" alt="Reddit" class="w-16 h-16 mb-4 transition-transform duration-300">
+        <span class="text-lg font-semibold">Reddit</span>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
